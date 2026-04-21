@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News Weekly - Fact Check Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>TECH NEWS WEEKLY</h1>
+            <p class="tagline">Streaming & Entertainment Industry Updates</p>
+            <p class="challenge">Can you spot the fake news? 🔍</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="articles-container">
+            <article class="news-card" id="article-1">
+                <div class="article-header">
+                    <h2>Netflix Tests Weekly Subscription Plan in European Cities</h2>
+                    <div class="meta-info">
+                        <span class="date">Published: March 2025</span>
+                        <span class="source">MarketingWeek</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <p><strong>Summary:</strong> Netflix is reportedly testing a new weekly subscription plan in select European cities, offering flexible, short-term access to content at a lower price point.</p>
+                </div>
+                <button class="reveal-btn" onclick="revealTruth(1)">Reveal Truth</button>
+                <div class="facts-box hidden" id="facts-1">
+                    <h3>Red Flags:</h3>
+                    <ul>
+                        <li>❌ No official Netflix announcement or confirmation</li>
+                        <li>❌ URL domain mismatch (claims MarketingWeek but links elsewhere)</li>
+                        <li>❌ Contradicts Netflix's core business model</li>
+                        <li>❌ Weekly plans would severely cannibalize monthly subscriptions</li>
+                        <li>❌ No credible secondary sources reporting this claim</li>
+                    </ul>
+                </div>
+                <div class="verdict fake hidden" id="verdict-1">
+                    <span class="badge">🚫 FAKE NEWS</span>
+                </div>
+            </article>
+
+            <article class="news-card" id="article-2">
+                <div class="article-header">
+                    <h2>Amazon Launches AI That Generates Episode Recaps from Content</h2>
+                    <div class="meta-info">
+                        <span class="date">Published: 2025</span>
+                        <span class="source">Business Insider</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <p><strong>Summary:</strong> Amazon has unveiled a cutting-edge AI system capable of generating episode recaps and summaries from content, using advanced natural language processing and AI technology.</p>
+                </div>
+                <button class="reveal-btn" onclick="revealTruth(2)">Reveal Truth</button>
+                <div class="facts-box hidden" id="facts-2">
+                    <h3>Key Facts:</h3>
+                    <ul>
+                        <li>✅ Amazon has invested in AI technology for content generation</li>
+                        <li>✅ AI can generate episode recaps and summaries from prompts</li>
+                        <li>✅ This represents legitimate advancement in AI for entertainment</li>
+                        <li>✅ Amazon Studios has confirmed AI initiatives for content creation</li>
+                        <li>✅ Recaps/summaries are realistic use cases for current AI technology</li>
+                    </ul>
+                </div>
+                <div class="verdict real hidden" id="verdict-2">
+                    <span class="badge">✅ VERIFIED REAL</span>
+                    <div class="references" id="references-2">
+                        <h4>📚 References:</h4>
+                        <ul>
+                            <li><a href="https://www.businessinsider.com/fable-amazon-funding-showrunner-platform-pitch-deck-hollywood-studios-2025-7" target="_blank">Business Insider - Amazon Funding Fable Showrunner Platform</a></li>
+                            <li><a href="https://www.amazon.com/b?ie=UTF8&node=24525334011" target="_blank">Amazon Studios Official</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card" id="article-3">
+                <div class="article-header">
+                    <h2>Spotify Introduces Audiobook Access Inside Premium Subscriptions</h2>
+                    <div class="meta-info">
+                        <span class="date">Published: November 2023</span>
+                        <span class="source">Spotify Official</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <p><strong>Summary:</strong> Spotify Premium subscribers now have access to premium audiobooks as part of their subscription, expanding Spotify's content offerings beyond music and podcasts.</p>
+                </div>
+                <button class="reveal-btn" onclick="revealTruth(3)">Reveal Truth</button>
+                <div class="facts-box hidden" id="facts-3">
+                    <h3>Key Facts:</h3>
+                    <ul>
+                        <li>✅ Confirmed by official Spotify support documentation</li>
+                        <li>✅ Rolled out to Premium subscribers in 2023</li>
+                        <li>✅ Part of Spotify's strategy to become a comprehensive audio platform</li>
+                        <li>✅ Audiobooks available in multiple languages</li>
+                        <li>✅ Included catalog of 100,000+ premium audiobooks</li>
+                    </ul>
+                </div>
+                <div class="verdict real hidden" id="verdict-3">
+                    <span class="badge">✅ VERIFIED REAL</span>
+                    <div class="references" id="references-3">
+                        <h4>📚 References:</h4>
+                        <ul>
+                            <li><a href="https://support.spotify.com/us/article/audiobooks-premium-plans/" target="_blank">Spotify Support - Audiobooks in Premium Plans</a></li>
+                            <li><a href="https://newsroom.spotify.com/" target="_blank">Spotify Newsroom</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="dos-donts-section hidden" id="dos-donts">
+            <h2>Do's and Don'ts: How to Identify Fake News</h2>
+            <div class="dos-donts-content">
+                <div class="do-box">
+                    <h3>✅ DO:</h3>
+                    <ul>
+                        <li><strong>Check the source:</strong> Is it from an official company website or verified news outlet?</li>
+                        <li><strong>Look for confirmations:</strong> Are other reputable sources reporting the same story?</li>
+                        <li><strong>Verify URLs:</strong> Do the links match the claimed source? Watch for URL mismatches.</li>
+                        <li><strong>Check official announcements:</strong> Search for official press releases or statements from the company</li>
+                        <li><strong>Assess feasibility:</strong> Does the claim align with the company's business model and capabilities?</li>
+                        <li><strong>Check publication dates:</strong> Real news has specific, verifiable dates and timestamps</li>
+                        <li><strong>Look for credentials:</strong> Is the author/source named and credible?</li>
+                    </ul>
+                </div>
+
+                <div class="dont-box">
+                    <h3>❌ DON'T:</h3>
+                    <ul>
+                        <li><strong>Don't trust single sources:</strong> Always cross-reference with multiple credible outlets</li>
+                        <li><strong>Don't ignore URL mismatches:</strong> If the URL doesn't match the claimed source, it's a red flag</li>
+                        <li><strong>Don't assume vague claims are true:</strong> Real news provides specific details, dates, and locations</li>
+                        <li><strong>Don't skip fact-checking:</strong> Take 30 seconds to verify before sharing</li>
+                        <li><strong>Don't ignore business logic:</strong> Consider if the claim makes sense for the company</li>
+                        <li><strong>Don't share without verification:</strong> Misinformation spreads fastest when people don't verify first</li>
+                        <li><strong>Don't trust sensational headlines:</strong> Fake news often uses exaggeration and emotional language</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tech News Weekly. Educational fact-checking exercise.</p>
+    </footer>
+
+    <script>
+        function revealTruth(articleNum) {
+            const factsBox = document.getElementById(`facts-${articleNum}`);
+            const verdict = document.getElementById(`verdict-${articleNum}`);
+            const btn = event.target;
+
+            factsBox.classList.remove('hidden');
+            verdict.classList.remove('hidden');
+            btn.style.display = 'none';
+
+            // Show Do's and Don'ts after first reveal
+            const allRevealed = document.querySelectorAll('.verdict:not(.hidden)').length;
+            if (allRevealed === 1) {
+                document.getElementById('dos-donts').classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

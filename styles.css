@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.challenge {
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.article-header {
+    padding: 25px;
+    border-bottom: 3px solid #e5e7eb;
+}
+
+.article-header h2 {
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    color: #1e3a8a;
+    line-height: 1.4;
+}
+
+.meta-info {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.meta-info span {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.article-content {
+    padding: 25px;
+}
+
+.article-content > p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.reveal-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reveal-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(30, 58, 138, 0.3);
+}
+
+.reveal-btn:active {
+    transform: scale(0.98);
+}
+
+.hidden {
+    display: none;
+}
+
+.facts-box {
+    background-color: #f9fafb;
+    border-left: 4px solid #1e3a8a;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.facts-box h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 0.95em;
+}
+
+.facts-box ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.facts-box li {
+    padding: 6px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.verdict {
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.verdict.real {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.verdict.fake {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.verdict.real .badge {
+    background-color: #86efac;
+    color: #164e63;
+}
+
+.verdict.fake .badge {
+    background-color: #fca5a5;
+    color: #7c2d12;
+}
+
+.references {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.references h4 {
+    margin-bottom: 10px;
+    color: #0f172a;
+    font-size: 0.95em;
+}
+
+.references ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.references li {
+    margin-bottom: 8px;
+}
+
+.references a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-size: 0.9em;
+    word-break: break-word;
+}
+
+.references a:hover {
+    text-decoration: underline;
+    color: #0f172a;
+}
+
+.analysis-section {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid #dc2626;
+}
+
+.analysis-section h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.analysis-content p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+.highlight {
+    background-color: #fef08a;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #991b1b;
+}
+
+.analysis-section ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.analysis-section li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.dos-donts-section {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+.dos-donts-section h2 {
+    color: #1e3a8a;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.dos-donts-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.do-box {
+    background-color: #f0fdf4;
+    border-left: 5px solid #16a34a;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.dont-box {
+    background-color: #fef2f2;
+    border-left: 5px solid #dc2626;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.do-box h3 {
+    color: #16a34a;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.dont-box h3 {
+    color: #dc2626;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.dos-donts-content ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.dos-donts-content li {
+    padding: 10px 0;
+    font-size: 0.95em;
+    color: #333;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.dos-donts-content li:last-child {
+    border-bottom: none;
+}
+
+.dos-donts-content li strong {
+    color: #1e3a8a;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #666;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .articles-container {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-section {
+        padding: 25px;
+    }
+
+    .article-header h2 {
+        font-size: 1.2em;
+    }
+
+    .dos-donts-content {
+        grid-template-columns: 1fr;
+    }
+
+    .dos-donts-section {
+        padding: 25px;
+    }
+}
